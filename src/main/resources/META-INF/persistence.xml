@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<persistence version="2.1" xmlns="http://xmlns.jcp.org/xml/ns/persistence" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/persistence http://xmlns.jcp.org/xml/ns/persistence/persistence_2_1.xsd">
+  <persistence-unit name="pu" transaction-type="JTA">
+    <jta-data-source>java:app/posts</jta-data-source>
+    <class>uesocc.edu.sv.ingenieria.prn335.progra3.Categoria</class>
+    <class>uesocc.edu.sv.ingenieria.prn335.progra3.Cometario</class>
+    <class>uesocc.edu.sv.ingenieria.prn335.progra3.Meta</class>
+    <class>uesocc.edu.sv.ingenieria.prn335.progra3.Paso</class>
+    <class>uesocc.edu.sv.ingenieria.prn335.progra3.Post</class>
+    <class>uesocc.edu.sv.ingenieria.prn335.progra3.PostPaso</class>
+    <class>uesocc.edu.sv.ingenieria.prn335.progra3.PostSeccion</class>
+    <class>uesocc.edu.sv.ingenieria.prn335.progra3.Rol</class>
+    <class>uesocc.edu.sv.ingenieria.prn335.progra3.RolCategoria</class>
+    <class>uesocc.edu.sv.ingenieria.prn335.progra3.Seccion</class>
+    <class>uesocc.edu.sv.ingenieria.prn335.progra3.TipoPaso</class>
+    <class>uesocc.edu.sv.ingenieria.prn335.progra3.TipoPost</class>
+    <class>uesocc.edu.sv.ingenieria.prn335.progra3.TipoPostSeccion</class>
+    <class>uesocc.edu.sv.ingenieria.prn335.progra3.TipoSeccion</class>
+    <class>uesocc.edu.sv.ingenieria.prn335.progra3.Usuario</class>
+    <class>uesocc.edu.sv.ingenieria.prn335.progra3.UsuarioRolCategoria</class>
+    <exclude-unlisted-classes>true</exclude-unlisted-classes>
+    <properties/>
+  </persistence-unit>
+</persistence>
