@@ -44,7 +44,7 @@ public class MetaBean extends ManagedBeanGenerico<Meta> implements Serializable{
         this.visible = visible;
     }
     
-    public MetaFacadeLocal getTipoSeccion() {
+    public MetaFacadeLocal getMeta() {
         return meta;
     }
 
@@ -56,7 +56,7 @@ public class MetaBean extends ManagedBeanGenerico<Meta> implements Serializable{
         this.nuevo = nuevo;
     }
 
-    public void setTipoSeccion(MetaFacadeLocal meta) {
+    public void setMeta(MetaFacadeLocal meta) {
         this.meta = meta;
     }
  

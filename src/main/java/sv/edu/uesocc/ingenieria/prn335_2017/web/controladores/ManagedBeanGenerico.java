@@ -15,7 +15,7 @@ import sv.edu.uesocc.ingenieria.prn335_2017.datos.acceso.BeansFacadeLocal;
  *
  * @author Castro
  */
-abstract class ManagedBeanGenerico<T> implements Serializable {
+public abstract class ManagedBeanGenerico<T> implements Serializable {
 
     T e = getEntity();
     List<T> lista = new ArrayList<>();

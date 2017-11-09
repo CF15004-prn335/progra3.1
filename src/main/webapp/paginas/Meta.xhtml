@@ -1,0 +1,53 @@
+<ui:composition xmlns="http://www.w3.org/1999/xhtml"
+                template="../WEB-INF/facelets/plantillas/contenido.xhtml"
+                xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+                xmlns:h="http://xmlns.jcp.org/jsf/html"
+                xmlns:f="http://java.sun.com/jsf/core"
+                xmlns:p="http://primefaces.org/ui">
+
+    <ui:define name="encabezado">
+        META
+    </ui:define>
+
+    <ui:define name="tabla">
+        <p:dataTable id="tblPadre" value="#{MetaBean.lista}" var="item" selectionMode="single" paginator="true" rows="10" selection="#{MetaBean.nuevo}" rowKey="#{item.idMeta}" sortBy="#{item.idMeta}">
+           
+            <p:column>
+                <f:facet name="header">
+                    <h:outputText value="IdMeta"/>
+                </f:facet>
+                <h:outputText value="#{item.idMeta}"/>
+            </p:column>
+            <p:column>
+                <f:facet name="header">
+                    <h:outputText value="Nombre"/>
+                </f:facet>
+                <h:outputText value="#{item.nombre}"/>
+            </p:column>
+            <p:column>
+                <f:facet name="header">
+                    <h:outputText value="Activo"/>
+                </f:facet>
+                <h:outputText value="#{item.activo}"/>
+            </p:column>
+            <p:column>
+                <f:facet name="header">
+                    <h:outputText value="Descripcion"/>
+                </f:facet>
+                <h:outputText value="#{item.descripcion}"/>
+            </p:column>
+        </p:dataTable>
+    </ui:define>
+    
+    <ui:define name="controlesTop">
+        <h:panelGroup id="pnlBotonesTop">
+            <h:panelGrid>
+                <h:messages id="mensajes" showDetail="true" showSummary="true"/>
+                <h:panelGrid columns="2">
+                    <h:commandButton actionListener="#{MetaBean.btnNuevoHandler}"
+                </h:panelGrid>
+            </h:panelGrid>
+        </h:panelGroup>
+    </ui:define>
+
+</ui:composition>

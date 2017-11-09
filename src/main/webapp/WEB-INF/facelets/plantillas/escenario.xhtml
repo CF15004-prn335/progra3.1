@@ -7,7 +7,7 @@
       xmlns:p="http://primefaces.org/ui">
     
     <h:head>
-        <title><ui:insert name="titulo">SISTEMA DE INVENTARIO</ui:insert></title>
+        <title><ui:insert name="titulo">POSTS</ui:insert></title>
         <meta name="viewport" content="width=device.width, initial-scale=1.0"/>
     </h:head>
     <h:body>
@@ -21,6 +21,9 @@
                     
                 </p:panelGrid>
             </h:form>
+            </p:layoutUnit>
+            <p:layoutUnit position="center" closable="false">
+                <ui:insert name="contenido"></ui:insert>
             </p:layoutUnit>
             <p:layoutUnit position="south" resizable="false" closable="fasle" size="40">
                 <h:panelGrid columns="3">
